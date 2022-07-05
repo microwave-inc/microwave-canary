@@ -1,5 +1,5 @@
 {
-  "join_message": "Microwave bot has arrived! use ``m!help`` for help \nand check out our website @ https://microwavebot.tech",
+  "join_message": "Microwave bot canary has arrived! use ``mc!help`` for help \nand check out our website @ https://microwavebot.tech",
   "devperms": [
     398959101322854400,
     597478415481700377,
@@ -20,8 +20,9 @@
     597478415481700377
   ],
   "prefix": [
-    "m!",
-    "M!"
+    "mc!",
+    "Mc!",
+    "mC!"
   ],
   "version": "2.9.1",
   "lastupdate": "<t:1655332440:F> (<t:1655332440:R>)",

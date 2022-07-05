@@ -173,7 +173,7 @@ class Owner(commands.Cog):
         token = os.getenv("TOKEN")
         await ctx.send("Shutting down...")
         await self.bot.close()
-        await os.system("~/Desktop/bot.sh")
+        await os.system("python3 ~/microwave-canary/index.py")
 
 #source: https://github.com/fourjr/eval-bot/blob/master/examples/cog.py
     @commands.command(name='eval')
