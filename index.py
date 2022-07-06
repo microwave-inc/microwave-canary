@@ -13,13 +13,14 @@ from discord.ext import tasks
 color = discord.Color.from_rgb(255,255,255)
 token = os.getenv("TOKEN")
 config = default.config() #used for the things in the config like loading prefixes
+prefix = config["prefix"]
 print("Logging in...")
 #for pretty help
 menu = DefaultMenu('◀️', '▶️', '❌') #used for menu nav
 
 #defines bot for the "bot.run()" at the bottom, and for loading cogs
 bot = Bot(
-    command_prefix=config["prefix"], prefix=config["prefix"],
+    command_prefix=prefix.lower(), prefix=prefix.lower(),
     owner_ids=config["devperms"], command_attrs=dict(hidden=True), help_command=HelpFormat(),
     allowed_mentions=discord.AllowedMentions(roles=False, users=True, everyone=False),
     intents=discord.Intents(
