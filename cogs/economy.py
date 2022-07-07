@@ -215,14 +215,15 @@ class Economy(commands.Cog):
             if user is not await eco.is_registered(user):
                 await eco.is_registered(user)
             else:
-                if user != None:
-                    await eco.is_registered(user)
-                    await eco.add_item(user.id, item)
-                    await ctx.send(f"You have added {item.capitalize()} to {user}'s inventory")
-                else:
-                    await eco.is_registered(user)
-                    await eco.add_item(ctx.author.id, item)
-                    await ctx.send(f"You have added {item.capitalize()} to your inventory")
+                pass
+            if user != None:
+                await eco.is_registered(user)
+                await eco.add_item(user.id, item)
+                await ctx.send(f"You have added {item.capitalize()} to {user}'s inventory")
+            else:
+                await eco.is_registered(user)
+                await eco.add_item(ctx.author.id, item)
+                await ctx.send(f"You have added {item.capitalize()} to your inventory")
 
     @commands.command()
     @commands.check(permissions.is_owner)

@@ -13,7 +13,7 @@ from discord.ext import tasks
 color = discord.Color.from_rgb(255,255,255)
 token = os.getenv("TOKEN")
 config = default.config() #used for the things in the config like loading prefixes
-prefix = config["prefix"]
+prefix = "mc!"
 print("Logging in...")
 #for pretty help
 menu = DefaultMenu('◀️', '▶️', '❌') #used for menu nav

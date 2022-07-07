@@ -40,7 +40,7 @@ class Events(commands.Cog):
 
         elif isinstance(err, errors.CommandOnCooldown):
             #await ctx.send(f"This command is on cooldown... try again in {round(error.retry_after, 2)} seconds.")
-            embed = discord.Embed(title="You're on a cooldown!", color=discord.Color.blue()) #https://stackoverflow.com/questions/64569898/how-do-i-make-cooldown-display-in-minsseconds-discord-py
+            embed = discord.Embed(title="You're on a cooldown!", color=discord.Color.red()) #https://stackoverflow.com/questions/64569898/how-do-i-make-cooldown-display-in-minsseconds-discord-py
             
             cd = round(error.retry_after)
             minutes = str(cd // 60)

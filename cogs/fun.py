@@ -173,5 +173,10 @@ class Fun_Commands(commands.Cog):
         await ctx.send(embed=embed)
         #the fucking amount of requests I used has to be a crime somewhere
 
+    @commands.command(aliases=["happywords"])
+    async def affermations(self, ctx):
+        """ Returns a random affermation """
+        await ctx.send(random.choice(lists.affermations))
+
 def setup(bot):
     bot.add_cog(Fun_Commands(bot))

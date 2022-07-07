@@ -7,7 +7,7 @@ ballresponse = [
 ],
 
 work = [ 
-"Janitor", "Discord Mod", "Redditor", "Profesional Idiot", "Bot Developer", "Microwave", "Miner", "Twitch Streamer", "⬜🟦 (ifykyk)", "Content Creator", "A Microwave Bot developer", "🟧⬛⭐ (yes I know, wow funny)", "pepe the frog", "hobo", 
+"Janitor", "Discord Mod", "Redditor", "Profesional Idiot", "Bot Developer", "Microwave", "Miner", "Twitch Streamer", "⬜🟦 (ifykyk)", "Content Creator", "A Microwave Bot developer", "🟧⬛⭐ (yes I know, wow funny)", "pepe the frog", "hobo", "pro technoblade fan", "cheems", "Hacker (but ur trash at it)", "Baby", "pro hypixel player"
 ],
 
 listeningstatus = [
@@ -24,8 +24,12 @@ playingstaus = [
 
 streamingstatus = [
   "https://twitch.tv/notsavave66", "https://twitch.tv/systhecat"
-]
+],
 
 blacklistedids = [
-  
+  ""
+],
+
+affermations = [
+  "You got this!", "When life pushes you, push back... HARDER!", "Life is like a boner, it get's hard randomly", ":)", ":smile:", "Nice personality - Ayden", "You don't need to touch grass :)"
 ]
