@@ -87,9 +87,6 @@ class Events(commands.Cog):
         
         if not hasattr(self.bot, "uptime"):
             self.bot.uptime = datetime.utcnow()
-
-        status = random.choice(lists.listeningstatus)
-        await self.bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name=status))
         
         # Indicate that the bot has successfully booted up
         print(f"Ready: {self.bot.user} | Servers: {len(self.bot.guilds)} | Users: {len(self.bot.users)} | Version: {self.config['version']} | Last Update: {self.config['lastupdate']}")
